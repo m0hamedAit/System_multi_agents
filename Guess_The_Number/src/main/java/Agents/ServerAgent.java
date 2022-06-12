@@ -15,9 +15,6 @@ import jade.lang.acl.ACLMessage;
 public class ServerAgent extends Agent {
     @Override
     public void setup() {
-        Player1Container player1 = new Player1Container();
-        Player2Container player2 = new Player2Container();
-        ServerContainer server = new ServerContainer();
         // generate a random number between 1 and 100
         int randomNumber = (int) (Math.random() * 100) + 1;
         addBehaviour(new CyclicBehaviour() {
