@@ -29,10 +29,8 @@ public class Player1Agent extends GuiAgent {
 
     @Override
     protected void setup() {
-        ParallelBehaviour parallelBehaviour = new ParallelBehaviour();
         gui = (Player1Container) getArguments()[0];
         gui.setAgent(this);
-        addBehaviour(parallelBehaviour);
         addBehaviour(new CyclicBehaviour() {
             @Override
             public void action() {
